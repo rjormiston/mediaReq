@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" media="all" href="stellarnav-master/css/stellarnav.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="stellarnav-master/js/stellarnav.js"></script>
+    <script src="info.js"></script>
+
+</head>
+<!--Image Sources:
+https://www.pics4learning.com/details.php?img=dsc_0167.jpg - Alpaca
+https://www.freeimages.com/photo/gift-surprise-1-1443692 - Suprised Prize woman
+
+-->
+<body>
+    <div id="pageContainer">
+        <div id="contentWrap">
+            <div id="myHeader" class="stellarnav"> <!--Creates shared header-->
+                <ul>
+                    <li class="has-sub">
+                        <a>Info</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="dash.html">Dashboard</a></li>
+                            <li><a href="sitemap.html">SiteMap</a></li>
+                        </ul>
+                    </li>
+                </ul>
+           </div>
+            <div id="infoText"> <!--Creates the div for the text in the info page-->
+                <h2>What is mediaReq?</h2>
+                <p>mediaReq is a platform for individuals to add youtube videos to a queue, and have them play in order.</p>
+                <h2>What are some of the technolgies used for this website?</h2>
+                <p>The website is built in pure HTML, CSS, Javascript, and Jquery.</p>
+                <h2>What are the jquery plugins used for the website?</h2>
+                <p>The plugins used are as follows:</p>
+                <ul>
+                    <li><a href = "https://www.jqueryscript.net/menu/jQuery-Accordion-Menu-Plugin-For-Bootstrap-3-metisMenu.html">metisMenu</a></li>
+                    <li><a href = "https://github.com/vinnymoreira/stellarnav">Stellarnav</a></li>
+                    <li><a>Generic jquery accordion</a></li>
+                </ul>
+                <h2>Where are the plugins used?</h2>
+                <p>The plugins are used in the following ways:</p>
+                <ul>
+                    <li>metisMenu: used to beautify the sitemap page, giving a more professional look to the page.</li>
+                    <li>Stellarnav: used to create the header that is seen on all pages except for the landing page.</li>
+                    <li>Generic Accordion: used to create the interactive playlist viewer on the dashboard</li>
+                </ul>
+                <h2>Where is AJAX used in the website?</h2>
+                <p>AJAX is used in the following ways:</p>
+                <ul>
+                    <li>Getting video thumbnails in the dashboard</li>
+                    <li>Getting video names in the dashboard</li>
+                    <li>Getting video descriptions in the dashboard</li>
+                </ul>
+            </div>
+        </div>
+        <footer id="sharedFooter">
+            <nav>
+                <ul id="footerList">
+                    <li><a href="dash.html">Dashboard</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="sitemap.html">SiteMap</a></li>
+                    <li><a href="https://validator.w3.org/">HTML Validation</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

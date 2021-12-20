@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SiteMap</title> <!--Calls in all required stylesheets and js files-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta2-web/css/fontawesome.css">
+    <link rel="stylesheet" href="metismenu-3.0.5/dist/metisMenu.min.css">
+    <link rel="stylesheet" type="text/css" media="all" href="stellarnav-master/css/stellarnav.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="sitemap.js"></script>
+    <script src="metismenu-3.0.5/dist/metisMenu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="stellarnav-master/js/stellarnav.js"></script>
+</head>
+<body> <!--Starter code comes from here: https://www.jqueryscript.net/menu/jQuery-Accordion-Menu-Plugin-For-Bootstrap-3-metisMenu.html-->
+    <div id="pageContainer">
+        <div id="contentWrap">
+          <div id="myHeader" class="stellarnav"> <!--Creates shared header-->
+            <ul>
+                <li class="has-sub">
+                    <a>Sitemap</a>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="dash.html">Dashboard</a></li>
+                      <li><a href="info.html">Info</a></li>
+                    </ul>
+                </li>
+            </ul>
+          </div>
+            <ul id="sitemapMenu"> <!--Creates HTML element for menu-->
+                <li class="active">
+                  <a href="./index.html" class="has-arrow" aria-expanded="true">Home Page</a>
+                  <ul>
+                      <li>
+                          <p>
+                              Home landing page of mediaReq. 
+                          </p>
+                      </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./dash.html" class="has-arrow" aria-expanded="false">Dashboard</a>
+                  <ul>
+                    <li>
+                        <p>
+                            Dashboard of mediaReq, allows users to input youtube links and have a embedded playback in-browser 
+                        </p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./info.html" class="has-arrow" aria-expanded="false">Information Page</a>
+                  <ul>
+                    <li>
+                        <p>
+                            Information page of mediaReq, offers information about the website and tech used. 
+                        </p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="./sitemap.html" class="has-arrow" aria-expanded="false">Site Map</a>
+                  <ul>
+                    <li>
+                        <p>
+                            Sitemap of mediaReq
+                        </p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="https://validator.w3.org/" class="has-arrow" aria-expanded="false">HTML Validation</a>
+                  <ul>
+                    <li>
+                        <p>
+                            Link to official HTML validation website
+                        </p>
+                    </li>
+                  </ul>
+                </li>
+                <li class="active">
+                  <a href="https://jigsaw.w3.org/css-validator/" class="has-arrow" aria-expanded="true">CSS Validation</a>
+                  <ul>
+                    <li>
+                        <p>
+                            Link to official CSS validation website 
+                        </p>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+        </div>
+
+    </div>
+    <footer id="sharedFooter" class="sitemapFooter">
+      <nav>
+          <ul id="footerList">
+              <li><a href="dash.html">Dashboard</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="info.html">Info</a></li>
+              <li><a href="sitemap.html">SiteMap</a></li>
+              <li><a href="https://validator.w3.org/">HTML Validation</a></li>
+              <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a></li>
+          </ul>
+      </nav>
+    </footer>
+</body>
+
+</html>

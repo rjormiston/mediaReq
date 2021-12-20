@@ -1,0 +1,163 @@
+/* Source for footer formatting: https://www.freecodecamp.org/news/how-to-keep-your-footer-where-it-belongs-59c6aa05c59c/ */
+/* (most) css calls are by ID, to keep it simple all pages share this CSS stylesheet. All names are (relatively) self-explanitory*/
+
+#pageContainer{
+    position: relative;
+    min-height: 100vh;
+}
+#contentWrap{
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#mainHeader{ /* landing page header */
+    margin: 0;
+    position: absolute;
+    font-size:500%;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Start Button CSS */
+.startButton { /*Button Design # 30from Algolia on CSS Scan: https://getcssscan.com/css-buttons-examples*/
+  align-items: center;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains 5Mono",monospace;
+  height: 48px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.startButton:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.startButton:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.startButton:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+}
+
+
+#sharedFooter{ /* CSS for shared Footer */
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+
+ul#footerList li { /* CSS for shared Footer */
+    display: inline;
+    padding: 20px;
+}
+
+#contentBox{
+  background-color: grey;
+  color:white;
+  margin: 0;
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  padding-bottom:20%;
+  isolation: isolate;
+  transform: translate(-50%, -50%);
+}
+
+#playlistResizer{
+  margin: 0;
+  position: absolute;
+  top: 35%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+#urlForm{
+  margin: 0;
+  position: absolute;
+  top: 72%;
+  left: 22%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  text-align: center;
+  font-size: x-large;
+  border: 1px solid black;
+}
+
+/*Come back to this, it is quite stupid and not expandable.*/
+/*Referenced from: https://www.w3schools.com/css/tryit.asp?filename=trycss_form_button */
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#player{
+  margin: 3px;
+  position: absolute;
+  top: 37%;
+  left: 22.5%;
+  transform: translate(-50%, -50%);
+  isolation: isolate;
+  /*padding: 10px;
+  border: 2px solid black;
+  */
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.33, rgb(1, 8, 8)), color-stop(0.67, rgb(14, 15, 15)));
+  background-image: -moz-linear-gradient(center bottom, rgb(1, 8, 8) 33%, rgb(14, 15, 15) 67% );
+  padding: 5px;
+  /* source: https://stackoverflow.com/a/7066176 */
+}
+
+#sitemapMenu{ /* Sitemap CSS */
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding-bottom: 5px;
+}
+
+#infoText{ /* Info page CSS */
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}

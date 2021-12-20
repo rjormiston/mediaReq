@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jquery-ui-1.13.0/jquery-ui.theme.css">
+    <link rel="stylesheet" type="text/css" media="all" href="stellarnav-master/css/stellarnav.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="jquery-ui-1.13.0/jquery-ui.js"></script>
+    <script src="stellarnav-master/js/stellarnav.js"></script>
+</head>
+<body>
+    <div id="pageContainer">
+        <div id="contentWrap">
+            <div id="myHeader" class="stellarnav"> <!--Creates shared header-->
+                <ul>
+                    <li class="has-sub">
+                        <a>Dashboard</a>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="info.html">Info</a></li>
+                            <li><a href="sitemap.html">SiteMap</a></li>
+                        </ul>
+                    </li>
+                </ul>
+           </div>
+                <div id="player"></div> <!--Based on info provided here: https://developers.google.com/youtube/iframe_api_reference#Loading_a_Video_Player-->
+                <form id="urlForm" method="post">
+                    <label for="inputURL">Please input your URL: </label>
+                    <input type="url" id="inputURL" name="inputURL">
+                    <input type="submit" id="dashSubmit" name="dashSubmit">
+                </form>
+            <div id="playlistResizer" class="ui-widget-content"> <!--Creates widget resizing div-->
+                <div id="contentPlaylist">
+                    <h3>Welcome to mediaReq!</h3> <!--Creates the playlist accordion widget-->
+                    <div>
+                        <p>
+                            Please input a youtube URL in the field, and click submit to start!
+                            <!--The general idea here is that once implementation with youtube API is done, this would dynamically change with the user's input
+                            and hold the video name, and (possibly) thumbnail.-->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="sharedFooter">
+            <nav>
+                <ul id="footerList"> <!--Footer code copied from home page-->
+                    <li><a href="dash.html">Dashboard</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="sitemap.html">SiteMap</a></li>
+                    <li><a href="https://validator.w3.org/">HTML Validation</a></li>
+                    <li><a href="https://jigsaw.w3.org/css-validator/">CSS Validation</a></li>
+                </ul>
+            </nav>
+            <script src="dash.js"></script>
+        </footer>
+    </div>
+</body>
+</html>
